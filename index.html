@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Crystals Collector</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+<h1>Take a Guess: <span id="number-to-guess"></span></h1>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="crystal1">
+      <img src="assets/images/222-82363.jpg" alt="boulder" onclick=alert(crystal1Number)>
+      </div>
+    </div>
+    
+    <div class="col-md-4">
+      <div class="crystal2">
+      <img src="assets/images/citrine-oval-18x13mm786-7651.JPG" alt="boulder" onclick=alert(crystal2Number)>
+      </div>
+    </div>
+    
+    <div class="col-md-4">
+      <div class="crystal3">
+      <img src="assets/images/coral-gemstone-250x250.png" alt="boulder" onclick=alert(crystal3Number)>
+      </div>
+    </div>
+    
+    <div class="col-md-4">
+      <div class="crystal4">
+      <img src="assets/images/moonstone-resent-image-1-e1517172251191.jpg" alt="boulder" onclick=alert(crystal4Number)>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+ <script>
+
+var targetNumber = Math.round(Math.random() * 20) + 1;
+
+$("#number-to-guess").text(targetNumber);
+
+
+  $(".crystal1").on("click", function() {
+
+    // Each time the user clicks the crystal the counter goes up by 1.
+    counter += 1;
+    console.log(counter)
+});
+$(".crystal2").on("click", function() {
+
+// Each time the user clicks the crystal the counter goes up by 1.
+counter += 1;
+console.log(counter)
+});
+$(".crystal3").on("click", function() {
+
+// Each time the user clicks the crystal the counter goes up by 1.
+counter += 1;
+console.log(counter)
+});
+$(".crystal4").on("click", function() {
+
+// Each time the user clicks the crystal the counter goes up by 1.
+counter += 1;
+console.log(counter)
+
+});
+
+var crystals = ["crystal1", "crystal2", "crystal3", "crystal4"]
+ var crystal1Number = 1;
+ var crystal2Number = 3;
+ var crystal3Number = 5;
+ var crystal4Number = 7;
+ var counter = 0;
+ var numberOptions = []
+
+ 
+// I need:
+// a mechanism to generate random number when the page loads. Check
+// something that counts the button clicks. 
+// a message to tell the user if they win or lose.
+// buttons in columns
+// 
+//
+ 
+
+
+ </script>
+  
+
+
+</body>
+
+</html>
